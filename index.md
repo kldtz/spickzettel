@@ -209,6 +209,9 @@ traceroute -I www.some-url.com
 # -P no conversion of port numbers to port names for network files (e.g., 443 -> https; faster)
 # -n no conversion of network numbers to host names (show IP instead of host name; faster)
 lsof -i -P -n | grep LISTEN
+
+# Check IP address
+ip a
 ```
 
 ## Ownership and Permissions
