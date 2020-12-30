@@ -192,6 +192,12 @@ convert -resize 50% image.jpg resized-image.jpg
 convert image.jpg -colorspace Gray image-gray.jpg
 # Convert to binary image
 convert image.jpg -monochrome image-bw.jpg
+
+# Convert image to PDF (make sure to set necessary rights in 
+# /etc/ImageMagick-7/policy.xml if permission error occurs)
+convert source.jpeg -auto-orient target.pdf
+# Compress PDF
+gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile=source.pdf target.pdf
 ```
 
 
