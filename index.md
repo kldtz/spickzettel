@@ -193,6 +193,12 @@ convert image.jpg -colorspace Gray image-gray.jpg
 # Convert to binary image
 convert image.jpg -monochrome image-bw.jpg
 
+# Compress PNG
+# Install pngquant
+apt install pngquant
+# Run default compression on all files (performance seems better than optipng)
+pngquant *
+
 # Convert image to PDF (make sure to set necessary rights in 
 # /etc/ImageMagick-7/policy.xml if permission error occurs)
 convert source.jpeg -auto-orient target.pdf
