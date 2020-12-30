@@ -53,6 +53,17 @@ rsync -r source target # => target/source/*
 rsync -av --delete source/ target/ 
 ```
 
+## Database
+
+```bash
+# Log into postgres as postgres user
+sudo -u postgres psql
+# Set password for user
+ALTER USER postgres PASSWORD 'password';
+# Exit psql client
+\q
+```
+
 
 ## Docker
 
