@@ -331,6 +331,13 @@ curl -X POST http://localhost:3000 -d "param1=value1&param2=value2"
 curl -d "@data.json" -X POST http://localhost:3000 | jq '.'
 ```
 
+## Shell
+
+```bash
+# change login shell to fish
+chsh -s `which fish`
+```
+
 
 ## Virtualenv
 
