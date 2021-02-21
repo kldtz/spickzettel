@@ -152,6 +152,11 @@ git branch -m <old-name> <new-name>
 # Clean untracked files
 # (-n dry run, -d recurse into untracked dirs)
 git clean
+
+# Display remote URL
+git remote -v
+# Set remote URL
+git remote set-url origin git@github.com:<user>/<repo>.git
 ```
 
 ### Comparing and Searching
