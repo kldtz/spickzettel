@@ -170,6 +170,9 @@ git diff master:src/dir/file branch:src/dir/file
 git log --all --grep="<pattern>"
 # Search commit contents
 git grep "<pattern>" $(git rev-list --all)
+
+# Follow changes of single file
+gitk --follow path/to/file
 ```
 
 ### Submodules
