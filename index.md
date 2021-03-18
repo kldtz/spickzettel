@@ -178,6 +178,8 @@ gitk --follow path/to/file
 ### Submodules
 
 ```bash
+# Create submodule under different name
+git submodule add git@... dir_name/
 # Initialize submodules from .gitmodules
 git submodule init
 # Update submodules to what superproject expects
