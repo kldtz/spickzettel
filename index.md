@@ -78,6 +78,8 @@ docker exec -it container-id bash
 
 # Copy file from host into running Docker container
 docker cp file.txt d90d46a905df:/path/inside/container/file.txt
+# Copy directory from container to host
+docker cp <container-hash>:/dir/path/inside/container/ ~/path/on/host/
 ```
 
 ### Docker Machine
