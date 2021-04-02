@@ -21,6 +21,17 @@ dmidecode
 dmidecode -t 1
 ```
 
+## Cargo
+
+```bash
+# Compile and run in release mode
+cargo run --release
+# Watch source files, execute 'run' on changes
+cargo watch -x run
+# Build package docs, open in browser
+cargo doc --open
+```
+
 ## Compression
 
 ```bash
@@ -354,8 +365,11 @@ curl -d "@data.json" -X POST http://localhost:3000 | jq '.'
 ## Shell
 
 ```bash
-# change login shell to fish
+# Change login shell to fish
 chsh -s `which fish`
+
+# Create soft/symbolic link
+ln -s <file_path> <link_name>
 ```
 
 
