@@ -176,6 +176,20 @@ git remote -v
 git remote set-url origin git@github.com:<user>/<repo>.git
 ```
 
+### LFS
+
+```bash 
+# Install client via apt
+apt install git-lfs
+# Set up git-lfs in Git config
+git lfs install
+# Track large files via pattern
+# (patterns will be written to .gitattributes)
+git lfs track '*.xml'
+# List all tracked patterns
+git lfs track
+```
+
 ### Comparing and Searching
 
 ```bash
