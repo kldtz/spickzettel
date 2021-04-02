@@ -254,6 +254,10 @@ ip a
 # Show permissions set on file (or dir)
 ls -l file.txt
 
+# Add existing user to existing group
+# (only takes effect after new login!)
+usermod -a -G <group> <user>
+
 # Remove read and write permissions for group and others
 chmod go-rw file.txt
 # Remove all permissions from file
