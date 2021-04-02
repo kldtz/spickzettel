@@ -1,3 +1,7 @@
+---
+title: Spickzettel 
+---
+
 ## BIOS
 
 ```bash
