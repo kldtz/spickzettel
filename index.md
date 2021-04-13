@@ -139,6 +139,8 @@ docker-compose -f docker-compose-custom.yml logs container-name
 ssh-keygen -t rsa -b 2048 -C "<user-id>"
 # Tell ssh to use specified key
 ssh -i /path/to/private/key user@host
+# Add BitBucket's public host key to known hosts
+ssh-keygen -t rsa bitbucket.org >> ~/.ssh/known_hosts
 
 
 # Start ssh-agent (evaluate shell commands required to set up environment variables 
