@@ -136,7 +136,7 @@ docker-compose -f docker-compose-custom.yml logs container-name
 
 ```bash
 # Create SSH key pair: key type RSA, 2048 bits, with comment
-ssh-keygen -t rsa -b 2048 -C "<user-id>"
+ssh-keyscan -t rsa -b 2048 -C "<user-id>"
 # Tell ssh to use specified key
 ssh -i /path/to/private/key user@host
 # Add BitBucket's public host key to known hosts
