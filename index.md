@@ -122,7 +122,7 @@ docker-compose up container-name
 docker-compose rm
 
 # Build image without cache
-docker-compose build --no-cache bot-trup
+docker-compose build --no-cache <name> 
 
 # View log files of specific container (by name defined in yml)
 # using docker-compose.yml inside current dir
@@ -136,11 +136,11 @@ docker-compose -f docker-compose-custom.yml logs container-name
 
 ```bash
 # Create SSH key pair: key type RSA, 2048 bits, with comment
-ssh-keyscan -t rsa -b 2048 -C "<user-id>"
+ssh-keygen -t rsa -b 2048 -C "<user-id>"
 # Tell ssh to use specified key
 ssh -i /path/to/private/key user@host
 # Add BitBucket's public host key to known hosts
-ssh-keygen -t rsa bitbucket.org >> ~/.ssh/known_hosts
+ssh-keyscan -t rsa bitbucket.org >> ~/.ssh/known_hosts
 
 
 # Start ssh-agent (evaluate shell commands required to set up environment variables 
@@ -386,6 +386,9 @@ chsh -s `which fish`
 
 # Create soft/symbolic link
 ln -s <file_path> <link_name>
+
+# Remove all files under dir except for .git dir
+rm -rf dir/!(.git)
 ```
 
 
