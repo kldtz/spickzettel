@@ -332,6 +332,8 @@ done
 grep -r "pattern" --include "*.jl" --exclude .git .
 # Count number of different ANN files with rows containing more than 3 tab-separated columns
 awk 'BEGIN {FS="\t"}; NF > 3 {print FILENAME}' *.ann | sort | uniq | wc -l
+# Get the headers of all CSV files, sort them and count the number of unique instances
+file * | awk -vFS=':' '/CSV/ { print $1 }' | xargs head -n 1 -q | sort | uniq -c
 ```
 
 
