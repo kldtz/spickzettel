@@ -249,6 +249,21 @@ convert source.jpeg -auto-orient target.pdf
 gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile=source.pdf target.pdf
 ```
 
+## Kubernetes
+
+```bash
+# List all pods
+kubectl get pods -A
+# List services (with external IPs etc.)
+kubectl get services
+# Describe resource/group across all namespaces
+kubectl describe pod -A some-pod-name-hash
+# Check logs of pod, follow output (stream)
+kubectl logs -n some-namespace some-pod-name-hash
+# Delete namespace and everything associated with it
+kubectl delete namespace some-namespace
+```
+
 
 ## Monitoring
 
