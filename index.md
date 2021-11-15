@@ -159,6 +159,14 @@ ssh-add <(echo $GITLAB_PRIV_KEY | base64 --decode)
 openssl rand -hex 32
 ```
 
+## Fish
+
+```shell
+# Create alias and save it as a function (separate file in ~/.config/fish/functions)
+alias g='git'
+funcsave g
+```
+
 
 ## Git
 
