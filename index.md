@@ -43,6 +43,9 @@ gzip -cd news.2014.ru.shuffled.gz | head
 ## Conda 
 
 ```bash
+# Setup conda with fish 
+~/miniconda3/bin/conda init fish
+
 # Create new environment that contains Python 3.8 and pip
 conda create --name ENV-NAME python=3.8 pip
 # Install package in environment
