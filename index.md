@@ -273,6 +273,19 @@ kubectl describe pod -A some-pod-name-hash
 kubectl logs -n some-namespace some-pod-name-hash
 # Delete namespace and everything associated with it
 kubectl delete namespace some-namespace
+# Forward port
+kubectl port-forward service/<name> 7080:8080
+```
+
+### Minikube
+
+```bash
+minikube start|pause|unpause|stop
+# Delete all minikube clusters
+minikube delete --all
+minikube dashboard
+# Launch web browser
+minikube service <name>
 ```
 
 
