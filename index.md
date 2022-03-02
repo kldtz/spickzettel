@@ -430,6 +430,9 @@ ln -s <file_path> <link_name>
 
 # Remove all files under dir except for .git dir
 rm -rf dir/!(.git)
+
+# Copy all untracked files to some directory
+git ls-files --others --exclude-standard | xargs -I {} cp {} -t <target_dir>
 ```
 
 
