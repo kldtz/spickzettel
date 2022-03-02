@@ -385,6 +385,8 @@ pip freeze > requirements.txt
 pipreqs .
 # Install requirements (in order defined in file)
 pip install -r requirements.txt
+# Install from alternative PyPI instance
+pip install --trusted-host trusted.host.com --extra-index-url https://trusted.host.com/packages/...
 ```
 
 
@@ -447,12 +449,3 @@ source /PATH/TO/ENV-NAME/bin/activate
 deactiveate
 ```
 
-
-## Yarn
-
-```bash  
-# Install dependencies from package.json
-yarn
-# Run script defined in package.json
-yarn run SCRIPT
-```
